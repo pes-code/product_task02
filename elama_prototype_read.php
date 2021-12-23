@@ -39,9 +39,6 @@ $output = "";
 foreach ($result as $record) {
     $output .= "
     <tr>
-      <td>{$record["place"]}</td>
-      <td>{$record["important"]}</td>
-       <td>{$record["nutrition"]}</td>
     <td>{$record["medical"]}</td>
       <td>{$record["other"]}</td>
        <td>{$record["date"]}</td>
@@ -73,9 +70,6 @@ foreach ($result as $record) {
         <table>
             <thead>
                 <tr>
-                    <th>最期を過ごしたい場所</th>
-                    <th>私が大切にしたいこと</th>
-                    <th>自分で食べることができなくなったり、医師により回復不能と判断されたときの栄養手段で希望すること</th>
                     <th>医師が回復不能と判断したときに、私がして欲しい医療行為</th>
                     <th>その他の希望</th>
                     <th>記入日</th>
