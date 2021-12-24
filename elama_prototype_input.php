@@ -7,6 +7,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>prototype</title>
 </head>
+<style>
+    .hope_title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hope_text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text1 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item1:hover+.text1 {
+        display: block;
+    }
+
+    .text2 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item2:hover+.text2 {
+        display: block;
+    }
+
+    .text3 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item3:hover+.text3 {
+        display: block;
+    }
+
+    .text4 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item4:hover+.text4 {
+        display: block;
+    }
+
+    .text5 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item5:hover+.text5 {
+        display: block;
+    }
+
+    .text6 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item6:hover+.text6 {
+        display: block;
+    }
+
+    .text7 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item7:hover+.text7 {
+        display: block;
+    }
+
+    .text8 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item8:hover+.text8 {
+        display: block;
+    }
+
+    .text9 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item9:hover+.text9 {
+        display: block;
+    }
+
+    .text10 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item10:hover+.text10 {
+        display: block;
+    }
+
+    .text11 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item11:hover+.text11 {
+        display: block;
+    }
+
+    .text12 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item12:hover+.text12 {
+        display: block;
+    }
+
+    .text13 {
+        display: none;
+        width: 1000px;
+        position: absolute;
+        top: 50%;
+        left: 250px;
+        padding: 16px;
+        border-radius: 5px;
+        background: #33cc99;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .item13:hover+.text13 {
+        display: block;
+    }
+</style>
+<!----------------------------------------------------------------------->
 
 <body>
     <form action="elama_prototype_create.php" method="POST">>
@@ -14,87 +247,34 @@
             <h2>入力画面</h2>
             <form>
                 <fieldset class="hope_contents">
-                    <style>
-                        .hope_title {
-                            display: flex;
-                            justify-content: center;
-                        }
 
-                        .hope_text {
-                            display: flex;
-                            justify-content: center;
-                        }
-                    </style>
                     <div class="hope_title">
                         <h2>希望表明書</h2>
                     </div>
                     <div class="hope_text">
                         <p>私は、人生の最終段階を迎えたときに備え、医療に対する具体的な要望を以下に記しました。自分らしい最期を生きるための「私の希望」です。</p>
                     </div>
-
-                    <!--        <style>
-                        .medical_hope_item {
-                            display: flex;
-                            justify-content: center;
-                            align-content: center;
-                            flex-direction: column;
-                        }
-
-                        .medical_hope_item1 {
-                            display: flex;
-                            justify-content: center;
-                        }
-
-                        .medical_hope_item label {
-                            width: 25%;
-                        }
-
-                        .medical_hope_item2 {
-                            display: flex;
-                            justify-content: center;
-
-                        }
-
-                        .medical_hope_item3 {
-                            display: flex;
-                            justify-content: center;
-
-                        }
-
-                        .medical_hope_item4 {
-                            display: flex;
-                            justify-content: left;
-                            width: 93%;
-                        }
-
-                        .medical_hope_item {
-                            display: flex;
-                            justify-content: left;
-                            align-content: center;
-                            flex-direction: column;
-                        }
-                    </style>        -->
                     <div class="medical_hope">
                         <div class="medical_hope_text">
                             <h4>1．医師が回復不能と判断したときに、私がして欲しい医療行為</h4>
                         </div>
                         <div class="medical_hope_item">
-                            <!---------------------------------------------------------------------------->
+
                             <div class="medical_hope_item1">
                                 <div class="item_box1">
-                                    <input type="checkbox" id="" name="medical[]" value="胸骨圧迫"><label class="item1">胸骨圧迫</label>
+                                    <input type="checkbox" name="medical[]" value="胸骨圧迫"><label class="item1">胸骨圧迫</label>
                                     <span class="text1">【胸骨圧迫】
                                         <br>心臓が止まった際に胸を強く押す、いわゆる心臓マッサージと言われる行為です。
                                         <br>［メリット］
                                         <br>・全身（特に脳）に血液を送り込むためには早期から容易に行なえる行為ではあります。
                                         <br>［デメリット］
-                                        <br>・容易で迅速に行えるとはいえ、確実に全身に血液を送り込める方法ではありません。
+                                        <br>・確実に全身に血液を送り込める方法ではありません。
                                         <br>・心拍が再開したとしても、心停止時間が長かったり、高齢である場合は脳のダメージが大きく、正常な意識に戻らない場合もあります。
                                         <br>・極めて強い力で胸を押すため肋骨を折ってしまう可能性や肺を傷つける可能性が高いです。
                                     </span>
                                 </div>
                                 <div class="item_box2">
-                                    <input type="checkbox" id="" name="medical[]" value="強心薬･昇圧剤"><label class="item2">強心薬･昇圧剤</label>
+                                    <input type="checkbox" name="medical[]" value="強心薬･昇圧剤"><label class="item2">強心薬･昇圧剤</label>
                                     <span class="text2">【強心薬･昇圧剤】
                                         <br>心臓が止まった際に心臓を動かすため、あるいは血圧が下がった際に血圧を上げるために薬剤を使用します。
                                         <br>［メリット］
@@ -105,7 +285,7 @@
                                         <br>※心臓の動きや血圧が安定してくれば徐々に使用量を減量し、中断します。再び心停止や血圧低下があった場合は再使用します。</span>
                                 </div>
                                 <div class="item_box3">
-                                    <input type="checkbox" id="" name="medical[]" value="気管挿管"><label class="item3">気管挿管</label>
+                                    <input type="checkbox" name="medical[]" value="気管挿管"><label class="item3">気管挿管</label>
                                     <span class="text3">【気管挿管】<br>口から気道（肺へ繋がる空気の通り道）にかけて太いチューブを挿入して気道を確保する行為です。
                                         <br>［メリット］
                                         <br>・肺へ確実に酸素を送り込むことができるようになります。
@@ -119,8 +299,8 @@
                                     </span>
                                 </div>
                                 <div class="item_box4">
-                                    <input type="checkbox" id="" name="medical[]" value="人工心肺"><label class=" item4">人工心肺</label>
-                                    <span class="text4">太ももの付け根（或いは首）にある血管に太いチューブを挿入して機械で心臓や肺の代わりに身体に血液と酸素を送る行為です。
+                                    <input type="checkbox" name="medical[]" value="人工心肺"><label class=" item4">人工心肺</label>
+                                    <span class="text4">【人工心肺】太ももの付け根（或いは首）にある血管に太いチューブを挿入して機械で心臓や肺の代わりに身体に血液と酸素を送る行為です。
                                         <br>［メリット］
                                         <br>・心臓や肺の負担を和らげることができます。
                                         <br>［デメリット］
@@ -131,82 +311,10 @@
                                     </span>
                                 </div>
                             </div>
-
-                            <style>
-                                .text1 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item1:hover+.text1 {
-                                    display: block;
-                                }
-
-                                .text2 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item2:hover+.text2 {
-                                    display: block;
-                                }
-
-                                .text3 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item3:hover+.text3 {
-                                    display: block;
-                                }
-
-                                .text4 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item4:hover+.text4 {
-                                    display: block;
-                                }
-                            </style>
-                            <!---------------------------------------------------------------------------->
-
                             <div class="medical_hope_item2">
                                 <div class="item_box5">
-                                    <input type="checkbox" id="" name="medical[]" value="人工呼吸器"><label class=" item5">人工呼吸器</label>
-                                    <span class="text5">自力で十分な呼吸ができない場合に、機械を使って肺に酸素を送り込む行為です。気管挿管と併行する必要があります。
+                                    <input type="checkbox" name="medical[]" value="人工呼吸器"><label class=" item5">人工呼吸器</label>
+                                    <span class="text5">【人工呼吸器】自力で十分な呼吸ができない場合に、機械を使って肺に酸素を送り込む行為です。気管挿管と併行する必要があります。
                                         <br>チューブを挿入せずに人工呼吸を行なう非侵襲型人工呼吸器（NPPV）もありまずが、適応が限られます。
                                         <br>［メリット］
                                         <br>肺に確実に酸素を送り込むことができます。
@@ -220,8 +328,8 @@
                                     </span>
                                 </div>
                                 <div class="item_box6">
-                                    <input type="checkbox" id="" name="medical[]" value="気管切開"><label class=" item6">気管切開</label>
-                                    <span class="text6">喉に穴を空けて気道にかけてチューブを挿入します。
+                                    <input type="checkbox" name="medical[]" value="気管切開"><label class=" item6">気管切開</label>
+                                    <span class="text6">【気管切開】喉に穴を空けて気道にかけてチューブを挿入します。
                                         <br>［メリット］
                                         <br>・気管挿管に比べ、比較的に喉の違和感などの苦痛が軽減されます。
                                         <br>・強い副作用のある鎮痛剤･鎮静剤を使用する必要もなくなります。
@@ -234,288 +342,87 @@
                                     </span>
                                 </div>
                                 <div class="item_box7">
-                                    <input type="checkbox" id="" name="medical[]" value="酸素吸入"><label class=" item7">酸素吸入</label>
-                                    <span class="text7"><br>
-                                        ［メリット］<br>
-                                        <br>
-                                        ［デメリット］<br></span>
+                                    <input type="checkbox" name="medical[]" value="人工透析"><label class=" item7">人工透析</label>
+                                    <span class="text7">【人工透析】腎臓が機能しなくなって体内の老廃物を尿として排泄できなくなった際に首や太ももの付け根あたりの血管内に太いチューブを挿入し、機械で血液内の老廃物を排除する行為です。
+                                        <br>［メリット］
+                                        <br>・腎臓の代わりに体内の老廃物を排除してくれます。
+                                        <br>［デメリット］
+                                        <br>・太いチューブを介して外付けの大きな機械をつながれた状態になるため、自由な体勢をとることができません。
+                                        <br>・チューブの不快感を感じる場合もあります。
+                                        <br>・血液がチューブ内で固まってしまい、脳梗塞や肺梗塞を引き起こす危険性があります。
+                                        <br>・チューブが血管を傷つけて出血してしまう危険性があります。
+                                        <br>・チューブを介して感染を起こす危険性があります。
+                                    </span>
                                 </div>
                                 <div class="item_box8">
-                                    <input type="checkbox" id="" name="medical[]" value="人工透析"><label class=" item8">人工透析</label>
-                                    <span class="text8"><br>
-                                        ［メリット］<br>
-                                        <br>
-                                        ［デメリット］<br></span>
+                                    <input type="checkbox" name="medical[]" value="輸血"><label class=" item8">輸血</label>
+                                    <span class="text8">【輸血】貧血に対して血液を投与する行為です。
+                                        <br>［メリット］
+                                        <br>・確実に体内に血液が送り込まれることで貧血の改善に効果的です。
+                                        <br>［デメリット］
+                                        <br>・以下のような強い副作用が生じる場合があります。
+                                        <br> ・アナフィラキシーショック
+                                        <br> ・感染症（HIV,HBV,HCVなど）
+                                    </span>
                                 </div>
-                            </div>
 
-                            <style>
-                                .text5 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item5:hover+.text5 {
-                                    display: block;
-                                }
-
-                                .text6 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item6:hover+.text6 {
-                                    display: block;
-                                }
-
-                                .text7 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item7:hover+.text7 {
-                                    display: block;
-                                }
-
-                                .text8 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item8:hover+.text8 {
-                                    display: block;
-                                }
-                            </style>
-                            <!---------------------------------------------------------------------------->
-                            <div class="medical_hope_item3">
-                                <div class="item_box9">
-                                    <input type="checkbox" id="" name="medical[]" value="輸血"><label class=" item9">輸血</label>
-                                    <span class="text9"><br>
-                                        ［メリット］<br>
-                                        <br>
-                                        ［デメリット］<br></span>
+                                <div class="medical_hope_item3">
+                                    <div class="item_box9">
+                                        <input type="checkbox" name="medical[]" value="中心静脈栄養"><label class=" item9">中心静脈栄養</label>
+                                        <span class="text9">【中心静脈栄養】首や太ももの付け根にある太い血管から心臓の入り口までカテーテルを挿入して栄養価の高い点滴を投与する行為です。
+                                            <br>※濃度の濃い点滴であるため通常の点滴を行なうような細い血管では行なう事ができません。
+                                            <br>［メリット］
+                                            <br>・比較的に高い栄養を摂ることができます。
+                                            <br>※ただし食事を摂るほど十分なものではありません。
+                                            <br>・治療薬も確実に投与することができ、薬の効果を得やすいです。
+                                            <br>［デメリット］
+                                            <br>・長期的にカテーテル留置する場合は感染を起こす危険性があります。特に心臓の入り口付近の重要な血管なため重篤な感染症に陥る危険性もあります。
+                                            <br>・カテーテルを挿入する際に血管を突き破り肺に刺さってしまうことで気胸を起こす危険性もあります。
+                                        </span>
+                                    </div>
+                                    <div class="item_box10">
+                                        <input type="checkbox" name="medical[]" value="経鼻チューブ栄養"><label class=" item10">経鼻チューブ栄養</label>
+                                        <span class="text10">【経鼻チューブ栄養】鼻から胃にかけてチューブを挿入して栄養剤を投与する行為です。
+                                            <br>［メリット］
+                                            <br>・食事ができない場合でも比較的高い栄養を摂ることができます。
+                                            <br>・消化管を使用するため消化機能の低下を防ぐことができます。
+                                            <br>［デメリット］
+                                            <br>・鼻のチューブに違和感を感じる場合があります。
+                                            <br>・チューブが鼻の穴の周囲を圧迫して褥瘡を作る場合があります。
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="item_box10">
-                                    <input type="checkbox" id="" name="medical[]" value="輸液"><label class=" item10">輸液</label>
-                                    <span class="text10"><br>
-                                        ［メリット］<br>
-                                        <br>
-                                        ［デメリット］<br></span>
-                                </div>
+
                                 <div class="item_box11">
-                                    <input type="checkbox" id="" name="medical[]" value="中心静脈栄養"><label class=" item11">中心静脈栄養</label>
-                                    <span class="text11"><br>
-                                        ［メリット］<br>
-                                        <br>
-                                        ［デメリット］<br></span>
+                                    <input type="checkbox" name="medical[]" value="胃ろう"><label class=" item11">胃ろう</label>
+                                    <span class="text11">【胃ろう】お腹から胃にかけて穴を空けて専用の接続器具を取り付け、栄養剤を直接胃に投与します。
+                                        <br>［メリット］
+                                        <br>・経鼻チューブ栄養と比較して不快感が少ないです。
+                                        <br>［デメリット］
+                                        <br>・定期的に器具の交換が必要となります。
+                                        <br>・お腹に器具を取り付けるため不快感を感じる方もいらっしゃいます。
+                                    </span>
                                 </div>
                                 <div class="item_box12">
-                                    <input type="checkbox" id="" name="medical[]" value="経鼻チューブ栄養"><label class=" item12">経鼻チューブ栄養</label>
-                                    <span class="text12"><br>
-                                        ［メリット］<br>
-                                        <br>
-                                        ［デメリット］<br></span>
+                                    <input type="checkbox" name="medical[]" value="緩和医療"><label class=" item12">緩和医療</label>
+                                    <span class="text12">【緩和医療】病気に対して治療するのではなく、病気の症状に伴う苦痛に対して鎮痛剤や鎮静剤を使って対処的に苦痛を和らげる行為です。
+                                        <br>［メリット］
+                                        <br>・苦痛を和らげることで穏やかに過ごすことができます。
+                                        <br>［デメリット］
+                                        <br>・あくまで「苦痛を和らげる」ことを目的にしており、病気の治療ではありません。治療をしなければ病気は進行します。
+                                        <br>・強い作用の薬剤を使用するため意識がぼーっとして意思疎通が十分にとれなくなる状態になる場合があります。
+                                    </span>
                                 </div>
                             </div>
-
-                            <style>
-                                .text9 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item9:hover+.text9 {
-                                    display: block;
-                                }
-
-                                .text10 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item10:hover+.text10 {
-                                    display: block;
-                                }
-
-                                .text11 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item11:hover+.text11 {
-                                    display: block;
-                                }
-
-                                .text12 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item12:hover+.text12 {
-                                    display: block;
-                                }
-                            </style>
-                            <!---------------------------------------------------------------------------->
-
                             <div class="item_box13">
-                                <input type="checkbox" id="" name="medical[]" value="胃ろう"><label class=" item13">胃ろう</label>
-                                <span class="text13"><br>
-                                    ［メリット］<br>
-                                    <br>
-                                    ［デメリット］<br></span>
+                                <input type="checkbox" name="medical[]" value="家族や大切な人が到着するまで胸骨圧迫"><label class=" item13">家族や大切な人が到着するまで胸骨圧迫</label>
+                                <span class="text13">【家族や大切な人が到着するまで胸骨圧迫】心肺停止した際に家族や大切な方が死に目に会えるように、到着まで心臓マッサージを行ないます。
+                                    <br>［メリット］
+                                    <br>・
+                                    <br>［デメリット］
+                                    <br>・極めて強い力で胸を押すため肋骨を折ってしまう可能性や肺を傷つける可能性が高いです。
+                                </span>
                             </div>
-                            <div class="item_box14">
-                                <input type="checkbox" id="" name="medical[]" value="緩和医療"><label class=" item14">緩和医療</label>
-                                <span class="text14"><br>
-                                    ［メリット］<br>
-                                    <br>
-                                    ［デメリット］<br></span>
-                            </div>
-
-                            <style>
-                                .text13 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item13:hover+.text13 {
-                                    display: block;
-                                }
-
-                                .text14 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item14:hover+.text14 {
-                                    display: block;
-                                }
-                            </style>
-                            <!------------------------------------------------------------------------->
-                            <div class="item_box15">
-                                <input type="checkbox" id="" name="medical[]" value="口から入るものを食べる分だけ食べさせて欲しい"><label class=" item15">口から入るものを食べる分だけ食べさせて欲しい</label>
-                                <span class="text15"></span>
-                            </div>
-                            <div class="item_box16">
-                                <input type="checkbox" id="" name="medical[]" value="家族や大切な人が到着するまで胸骨圧迫"><label class=" item16">家族や大切な人が到着するまで胸骨圧迫</label>
-                                <span class="text16"></span>
-                            </div>
-
-                            <style>
-                                .text15 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item15:hover+.text15 {
-                                    display: block;
-                                }
-
-                                .text16 {
-                                    display: none;
-                                    width: 500px;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 250px;
-                                    padding: 16px;
-                                    border-radius: 5px;
-                                    background: #33cc99;
-                                    color: #fff;
-                                    font-weight: bold;
-                                }
-
-                                .item16:hover+.text16 {
-                                    display: block;
-                                }
-                            </style>
                         </div>
 
                         <div class="other_hope">

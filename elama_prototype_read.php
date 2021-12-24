@@ -35,12 +35,15 @@ $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 //var_dump($result);
 //echo '</pre>';
 
+$medical_array = $_POST['medical']; //配列
+
 $output = "";
+
 foreach ($result as $record) {
     $output .= "
     <tr>
-    <td>{$record["medical"]}</td>
-      <td>{$record["other"]}</td>
+     <td>{$record["medical"]}</td> 
+    <td>{$record["other"]}</td>
        <td>{$record["date"]}</td>
        <td>{$record["name"]}</td>
        <td>
@@ -70,7 +73,7 @@ foreach ($result as $record) {
         <table>
             <thead>
                 <tr>
-                    <th>医師が回復不能と判断したときに、私がして欲しい医療行為</th>
+                    <th>私がして欲しい医療行為</th>
                     <th>その他の希望</th>
                     <th>記入日</th>
                     <th>氏名</th>
